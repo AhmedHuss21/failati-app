@@ -1,4 +1,4 @@
-const CACHE='failati-pwa-v2-2-20261109';
+const CACHE='failati-pwa-v2-2-1-20261109';
 const ASSETS=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
