@@ -1,4 +1,4 @@
-const CACHE='failati-v32-20261116';
+const CACHE='failati-v33-20261119';
 const ASSETS=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
